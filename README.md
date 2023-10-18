@@ -135,7 +135,7 @@ Sur la machine landing-vm1 :
 
 Installez les paquets sl, dnsmasq et htop. 
 
-🎰 Vérifiez leur version
+🎰 Vérifiez leur version  
 ```sl -version``  
 
 
