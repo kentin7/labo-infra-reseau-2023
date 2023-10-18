@@ -156,3 +156,33 @@ This software comes with ABSOLUTELY NO WARRANTY.
 Dnsmasq is free software, and you are welcome to redistribute it
 under the terms of the GNU General Public License, version 2 or 3.
 ```
+
+
+🎰 pingez google.com  
+
+```
+[root@vm-landing1 ~]# ping 8.8.8.8  
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.  
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=128 time=30.9 ms  
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=128 time=32.3 ms  
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=128 time=30.5 ms  
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=128 time=32.4 ms  
+
+--- 8.8.8.8 ping statistics ---  
+4 packets transmitted, 4 received, 0% packet loss, time 3004ms  
+rtt min/avg/max/mdev = 30.500/31.537/32.435/0.845 ms  
+
+```
+
+
+Sur la machine landing-vm1, changez la carte réseau en Host-Only.
+🎯 Quelle est l'utilité de ce type de carte réseau ?
+
+Elle permet d'isoler une machine du reste du réseau la communication ne se fait qu'entre la machine virtualisé et l'hôte, la carte réseau "host-only" dans VMware permet de créer un réseau virtuel isolé entre l'hôte physique et les machines virtuelles, offrant un contrôle total sur les communications au sein de cet environnement. Elle est utile pour divers scénarios de développement, de test, d'apprentissage et de sécurité.
+
+🎰 Pingez landing-vm2 avec landing-vm1, que se passe-t-il ?
+
+```ping 172.16.64.3```
+
+La machine n'est pas joignable.
+
