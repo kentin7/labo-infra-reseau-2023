@@ -42,7 +42,7 @@ Après avoir redémarré, vous devriez avoir un nouveau hostname :
 
 ![Alt text](image-2.png)
 
-## 🎰 Trouvez l'adresse IP locale des machines
+## 🎰 Trouvez l'adresse IP locale des machines + ip + broadcast
 
 __Machine 1__
 
@@ -81,12 +81,4 @@ __Machine 2__
        valid_lft forever preferred_lft forever  
 ```
 
-
-## 🎯 Quelle est l'adresse de broadcast ?
-
-``````
-
-## 🎰 Trouvez le masque de sous-réseau des machins
-
-## 🎰 Trouvez l'adresse MAC des machines
 
