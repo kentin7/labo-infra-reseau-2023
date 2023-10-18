@@ -82,3 +82,8 @@ __Machine 2__
 ```
 
 
+## 🎰 Pingez l'adresse publique du site www.ynov.com avec une des deux machines
+
+```ping www.ynov.com```
+
+```PING www.ynov.com (172.67.74.226) 56(84) bytes of data.  64 bytes from 172.67.74.226 (172.67.74.226): icmp_seq=1 ttl=128 time=14.5 ms  64 bytes from 172.67.74.226 (172.67.74.226): icmp_seq=2 ttl=128 time=16.4 ms  64 bytes from 172.67.74.226 (172.67.74.226): icmp_seq=3 ttl=128 time=17.8 ms  64 bytes from 172.67.74.226 (172.67.74.226): icmp_seq=4 ttl=128 time=19.8 ms  --- www.ynov.com ping statistics ---  4 packets  transmitted, 4 received, 0% packet loss, time 3005ms  rtt min/avg/max/mdev = 14.465/17.123/19.785/1.948 ms```
