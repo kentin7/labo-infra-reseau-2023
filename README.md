@@ -108,3 +108,46 @@ Changez son mot de passe, puis de compte et connectez-vous avec l'utilisateur la
 ```
 cat: /var/log/tallylog: Permission denied
 ```
+## 🎯 Vous remarquerez un problème. Pourquoi obtenez-vous cette erreur ?
+
+![Alt text](image-4.png)
+
+Le user labo-user1 n'a pas les droit afin de lire le fichier *tallylog*  
+Ajoutez ces utilisateurs au groupe wheel et retentez
+
+🎯 Il n'y aura plus d'erreur. Pourquoi ?
+L'erreur n'est plus la car l'utilisateur a spécifié qui souhaite exécuter cette commande en temps que su
+
+Retentez en changeant d'utilisateur et en passant root
+🎯 Ca devrait marcher. Pourquoi ?
+
+Root possède les droits de super utilisateur
+
+Ajoutez l'utilisateur labo-user1 au sudoers (petit coup de Google), puis retentez la commande sudo cat
+🎯 Ca devrait marcher. Pourquoi ?
+
+Suite à l'ajout de labo-user1 au groupe sudoers, il devient superuser sur la machine. 
+
+
+
+
+Sur la machine landing-vm1 :
+
+Installez les paquets sl, dnsmasq et htop. 
+
+🎰 Vérifiez leur version
+```sl -version``
+```htop -v```  
+```
+htop 3.2.2
+```
+```dnsmasq -v```
+```
+Dnsmasq version 2.85  Copyright (c) 2000-2021 Simon Kelley   
+Compile time options: IPv6 GNU-getopt DBus no-UBus no-i18n IDN2 
+DHCP DHCPv6 no-Lua TFTP no-conntrack ipset auth cryptohash   DNSSEC loop-detect inotify dumpfile
+
+This software comes with ABSOLUTELY NO WARRANTY.  
+Dnsmasq is free software, and you are welcome to redistribute it
+under the terms of the GNU General Public License, version 2 or 3.
+```
