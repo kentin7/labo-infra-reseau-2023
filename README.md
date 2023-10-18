@@ -21,6 +21,8 @@ Utilisez une image Rocky Linux pour l'installation.
 
 # Donnez-leur des cartes réseau NAT, et ⏹️ associez-leur les adresses IP 172.16.64.2 et 172.16.64.3.
 
+Utiliser la commande nmtui
 ```nmtui```
+Et rentre les informations
 ![Alt text](image.png)
 
