@@ -44,7 +44,7 @@ Après avoir redémarré, vous devriez avoir un nouveau hostname :
 
 ## 🎰 Trouvez l'adresse IP locale des machines
 
-[root@vm-landing1 ~]# ip a  
+```[root@vm-landing1 ~]# ip a  
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state   UNKNOWN group default qlen 1000  
     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00  
     inet 127.0.0.1/8 scope host lo  
@@ -58,7 +58,7 @@ Après avoir redémarré, vous devriez avoir un nouveau hostname :
        valid_lft forever preferred_lft forever
     inet6 fe80::20c:29ff:fef4:bcf4/64 scope link noprefixroute
        valid_lft forever preferred_lft forever
-
+```
 
 ## 🎯 Quelle est l'adresse de broadcast ?
 
