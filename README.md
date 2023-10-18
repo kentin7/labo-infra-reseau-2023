@@ -29,14 +29,14 @@ Et rentre les informations
 
 # Changez le nom d'hôte des machines pour avoir respectivement vm-landing1 et vm-landing2
 
-Pour la machine 1
-```hostnamectl set-hostname vm-landing1```
-Pour la machine 2
-```hostnamectl set-hostname vm-landing2```
+Pour la machine 1   
+```hostnamectl set-hostname vm-landing1```    
+Pour la machine 2   
+```hostnamectl set-hostname vm-landing2```  
 
-Penser a reboot les deux machines afin d'appliquer le nouveau hostname 
+Penser a reboot les deux machines afin d'appliquer le nouveau hostname   
 
-Après avoir redémarré, vous devriez avoir un nouveau hostname :
+Après avoir redémarré, vous devriez avoir un nouveau hostname :   
 
 ![Alt text](image-1.png)
 
