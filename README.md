@@ -136,12 +136,17 @@ Sur la machine landing-vm1 :
 Installez les paquets sl, dnsmasq et htop. 
 
 🎰 Vérifiez leur version
-```sl -version``
-```htop -v```  
+```sl -version``  
+
+
+```htop -v```     
+
 ```
 htop 3.2.2
 ```
-```dnsmasq -v```
+
+```dnsmasq -v```  
+
 ```
 Dnsmasq version 2.85  Copyright (c) 2000-2021 Simon Kelley   
 Compile time options: IPv6 GNU-getopt DBus no-UBus no-i18n IDN2 
