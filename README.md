@@ -102,3 +102,9 @@ Changez son mot de passe, puis de compte et connectez-vous avec l'utilisateur la
  ---------------------------------------------------------   
 
 
+## 🎰 Essayez de lire le contenu du fichier /var/log/tallylog
+
+```[labo-user1@vm-landing1 ~]$ cat /var/log/tallylog```
+```
+cat: /var/log/tallylog: Permission denied
+```
