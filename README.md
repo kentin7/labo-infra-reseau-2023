@@ -191,18 +191,18 @@ La machine n'est pas joignable.
 
 Créez un fichier nommé checking.sh et rendez-le exécutable  
 Modifiez ce fichier de script pour qu'il fasse les actions suivantes quand lancé :  
-### Le script doit vérifier automatiquement les mises à jour
-### Si vous lui passez l'argument --update, il doit les installer
-### Il doit afficher de manière bien lisible les informations suivantes :
-### Un grande message stylé affichant le nom du script
-### Nom d'hôte du système
-### Version du noyau Linux
-### Date et heure du jour
-### Adresse IPv4
-### Adresse IPv6 de liaison locale
-### Serveurs DNS présents
-### Il doit vider le journal des logs (journalctl)
-### Il doit vérifier si le pare-feu est activé
+ Le script doit vérifier automatiquement les mises à jour
+ Si vous lui passez l'argument --update, il doit les installer
+ Il doit afficher de manière bien lisible les informations suivantes :
+ Un grande message stylé affichant le nom du script
+ Nom d'hôte du système
+ Version du noyau Linux
+ Date et heure du jour
+ Adresse IPv4
+ Adresse IPv6 de liaison locale
+ Serveurs DNS présents
+ Il doit vider le journal des logs (journalctl)
+ Il doit vérifier si le pare-feu est activé
 
 ``` [root@vm-landing1 labo-user1]# ./checking.sh  
 ==========================================  
