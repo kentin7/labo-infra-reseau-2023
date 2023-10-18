@@ -95,4 +95,9 @@ __Machine 2__
   4 packets  transmitted, 4 received, 0% packet loss, time 3005ms  
   rtt min/avg/max/mdev = 14.465/17.123/19.785/1.948 ms```
 
-  *coucou*
+---------------------------------------------------------
+
+Sur chaque machine, créez respectivement un utilisateur labo-user1 et labo-user2.
+Changez son mot de passe, puis de compte et connectez-vous avec l'utilisateur labo-1
+---------------------------------------------------------
+
