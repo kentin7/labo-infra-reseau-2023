@@ -222,7 +222,9 @@ Vacuuming done, freed 0B of archived journals from /run/log/journal/a2b01d1c483a
 Le pare-feu est actif.  
 ```
 
-``` FICHIER *checking.sh* 
+FICHIER *checking.sh* 
+
+``` 
 #!/bin/bash  
 
 # Fonction pour afficher un message stylé  
