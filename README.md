@@ -222,3 +222,48 @@ Vacuuming done, freed 0B of archived journals from /run/log/journal/a2b01d1c483a
 Le pare-feu est actif.  
 ```
 
+``` FICHIER *checking.sh* 
+#!/bin/bash  
+
+# Fonction pour afficher un message stylé  
+function display_message {  
+    echo "=========================================="  
+    echo "        Script de Vérification"  
+    echo "=========================================="  
+}
+
+# Fonction pour vérifier si le pare-feu est actif  
+function check_firewall {  
+    if systemctl is-active --quiet firewalld; then  
+        echo "Le pare-feu est actif."  
+    else  
+        echo "Le pare-feu n'est pas actif."  
+    fi  
+}
+
+# Vérifie si l'option --update est passée en argument
+if [ "$1" == "--update" ]; then
+    display_message
+    echo "Mises à jour du système en cours..."
+    sudo yum -y update
+fi
+
+# Affiche les informations demandées
+display_message
+echo "Nom d'hôte du système : $(hostname)"
+echo "Version du noyau Linux : $(uname -r)"
+echo "Date et heure du jour : $(date)"
+echo "Adresse IPv4 : $(hostname -I | cut -d' ' -f1)"
+echo "Adresse IPv6 de liaison locale : $(hostname -I | cut -d' ' -f2)"
+echo "Serveurs DNS présents :"
+cat /etc/resolv.conf
+
+# Vide le journal des logs
+echo "Vidage du journal des logs..."
+sudo journalctl --vacuum-time=1d
+
+# Vérifie si le pare-feu est activé
+check_firewall
+
+```
+
