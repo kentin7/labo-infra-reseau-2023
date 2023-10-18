@@ -99,8 +99,7 @@ __Machine 2__
 
 
 
----------------------------------------------------------
+ ---------------------------------------------------------
 Sur chaque machine, créez respectivement un utilisateur labo-user1 et labo-user2.
 Changez son mot de passe, puis de compte et connectez-vous avec l'utilisateur labo-1
----------------------------------------------------------
-
+ ---------------------------------------------------------
