@@ -94,3 +94,5 @@ __Machine 2__
   --- www.ynov.com ping statistics ---  
   4 packets  transmitted, 4 received, 0% packet loss, time 3005ms  
   rtt min/avg/max/mdev = 14.465/17.123/19.785/1.948 ms```
+
+  *coucou*
